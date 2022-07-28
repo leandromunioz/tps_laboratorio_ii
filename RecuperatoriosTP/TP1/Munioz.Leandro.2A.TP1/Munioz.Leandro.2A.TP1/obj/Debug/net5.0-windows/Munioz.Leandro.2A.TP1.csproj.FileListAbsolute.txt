@@ -1,0 +1,6 @@
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro._2A.TP1.FormCalculadora.resources
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro.2A.TP1.csproj.GenerateResource.cache
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro.2A.TP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro.2A.TP1.AssemblyInfoInputs.cache
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro.2A.TP1.AssemblyInfo.cs
+C:\Users\Gonza\source\repos\TP1\Munioz.Leandro.2A.TP1\Munioz.Leandro.2A.TP1\obj\Debug\net5.0-windows\Munioz.Leandro.2A.TP1.csproj.CoreCompileInputs.cache
