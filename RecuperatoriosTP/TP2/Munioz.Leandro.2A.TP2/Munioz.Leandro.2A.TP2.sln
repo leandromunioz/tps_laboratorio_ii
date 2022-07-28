@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Munioz.Leandro.2A.TP2", "Munioz.Leandro.2A.TP2\Munioz.Leandro.2A.TP2.csproj", "{21FEB10D-2751-4297-B132-CF65061CEF90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{98435D41-7932-47CC-BF82-30C56091F388}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21FEB10D-2751-4297-B132-CF65061CEF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FEB10D-2751-4297-B132-CF65061CEF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FEB10D-2751-4297-B132-CF65061CEF90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FEB10D-2751-4297-B132-CF65061CEF90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98435D41-7932-47CC-BF82-30C56091F388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98435D41-7932-47CC-BF82-30C56091F388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98435D41-7932-47CC-BF82-30C56091F388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98435D41-7932-47CC-BF82-30C56091F388}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {925DF7D3-844C-4A56-9078-0E4A7D054D98}
+	EndGlobalSection
+EndGlobal
