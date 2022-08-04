@@ -51,9 +51,13 @@ namespace Gimnasio_PAPUSA
                 MessageBox.Show("Por favor, complete correctamente todos los campos antes de continuar.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
-            if ((DateTime.Today.Year - fechaNac.Value.Year) < 16)
+            else if ((DateTime.Today.Year - fechaNac.Value.Year) < 16)
             {
                 MessageBox.Show("La edad mínima para inscribirse al gimnasio es de 16 años.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }else if (txt_reg_dni.Text.Length != 8)
+            {
+                MessageBox.Show("El Dni debe poseer 8 caracteres.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
 

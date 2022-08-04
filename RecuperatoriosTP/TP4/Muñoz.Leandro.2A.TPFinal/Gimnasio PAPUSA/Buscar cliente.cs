@@ -25,20 +25,26 @@ namespace Gimnasio_PAPUSA
         {
             if (string.IsNullOrEmpty(txt_buscar_dni.Text))
             {
-                MessageBox.Show("Debe completar el campo para continuar.");
+                MessageBox.Show("Complete el campo para buscar el cliente por su Dni.");
             }
+
+       
             else
             {
                 Clientes cliente = sistema.BuscarElemento(new Clientes("Leandro", "Munoz", txt_buscar_dni.Text, new DateTime(1996, 12, 22), "Mendoza 555", DateTime.Today));
 
-                if(cliente is not null)
+                if (cliente is not null)
                 {
                     Cliente_encontrado formClienteEncontrado = new Cliente_encontrado(cliente, sistema.Lista);
                     this.Close();
                     formClienteEncontrado.ShowDialog();
-                    
+
                 }
-                
+                else
+                {
+                    MessageBox.Show("El Dni ingresado no se encuentra en el sistema.");
+                }
+
             }
         }
 

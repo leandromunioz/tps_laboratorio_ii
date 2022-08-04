@@ -53,7 +53,7 @@ namespace Gimnasio_PAPUSA
                 listaClientes.Remove(cliente);
                 rtb_clienteEncontrado.Clear();
                 this.Close();
-
+                this.DialogResult = DialogResult.OK;
             }
 
         }
@@ -85,7 +85,7 @@ namespace Gimnasio_PAPUSA
             ClientesDB.Modificar(cliente);
             rtb_clienteEncontrado.Clear();
             rtb_clienteEncontrado.Text += cliente.ToString();
-
+            this.DialogResult = DialogResult.OK;
 
 
         }

@@ -57,25 +57,22 @@ namespace Gimnasio_PAPUSA
             tarea.Start();
             Task.WaitAll(tarea);
 
-            if (buscarCliente.DialogResult == DialogResult.OK)
-            {
-                Refrescar();
-            }
+            Refrescar();
+            
         }
 
-        private void img_eliminar_Click(object sender, EventArgs e)
-        {
-            Buscar_cliente buscarCliente = new Buscar_cliente(sistemaClientes);
-            Task tarea = new Task(() => buscarCliente.ShowDialog());
-            tarea.Start();
-            Task.WaitAll(tarea);
-                if (buscarCliente.DialogResult == DialogResult.OK)
-                {
-                    Refrescar();
-                }
+        //private void img_eliminar_Click(object sender, EventArgs e)
+        //{
+        //    Buscar_cliente buscarCliente = new Buscar_cliente(sistemaClientes);
+        //    Task tarea = new Task(() => buscarCliente.ShowDialog());
+        //    tarea.Start();
+        //    Task.WaitAll(tarea);
+    
+        //    Refrescar();
+                
             
             
-        }
+        //}
 
 
 
@@ -88,6 +85,9 @@ namespace Gimnasio_PAPUSA
             sistemaClientes.AgregarElemento(cliente);
             sistemaClientes.AgregarElemento(cliente2);
             rtb_Listado.Text += sistemaClientes.ToString();
+
+            sistemaClientes = ClientesDB.Leer();
+            Refrescar();
         }
 
         private void img_salir_Click(object sender, EventArgs e)
@@ -185,11 +185,7 @@ namespace Gimnasio_PAPUSA
 
         }
 
-        private void btn_importar_Click(object sender, EventArgs e)
-        {
-            sistemaClientes = ClientesDB.Leer();
-            Refrescar();
-        }
+    
 
         private void InformarAltaCliente()
         {

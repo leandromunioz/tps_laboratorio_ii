@@ -36,7 +36,6 @@ namespace Gimnasio_PAPUSA
             this.img_agregar = new System.Windows.Forms.PictureBox();
             this.lbl_agregar = new System.Windows.Forms.Label();
             this.lbl_modificar = new System.Windows.Forms.Label();
-            this.lbl_eliminar = new System.Windows.Forms.Label();
             this.lbl_cerrarSesion = new System.Windows.Forms.Label();
             this.rtb_Listado = new System.Windows.Forms.RichTextBox();
             this.lbl_nombreYApellido = new System.Windows.Forms.Label();
@@ -52,7 +51,6 @@ namespace Gimnasio_PAPUSA
             this.btn_DeserializarJSON = new System.Windows.Forms.Button();
             this.btn_SerializarXML = new System.Windows.Forms.Button();
             this.btn_DeserializarXML = new System.Windows.Forms.Button();
-            this.btn_importar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.img_modificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_agregar)).BeginInit();
@@ -64,7 +62,7 @@ namespace Gimnasio_PAPUSA
             // 
             this.img_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_modificar.Image = ((System.Drawing.Image)(resources.GetObject("img_modificar.Image")));
-            this.img_modificar.Location = new System.Drawing.Point(644, 1);
+            this.img_modificar.Location = new System.Drawing.Point(671, 1);
             this.img_modificar.Name = "img_modificar";
             this.img_modificar.Size = new System.Drawing.Size(79, 40);
             this.img_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -76,13 +74,12 @@ namespace Gimnasio_PAPUSA
             // 
             this.img_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_eliminar.Image = ((System.Drawing.Image)(resources.GetObject("img_eliminar.Image")));
-            this.img_eliminar.Location = new System.Drawing.Point(698, 1);
+            this.img_eliminar.Location = new System.Drawing.Point(671, 123);
             this.img_eliminar.Name = "img_eliminar";
             this.img_eliminar.Size = new System.Drawing.Size(84, 40);
             this.img_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_eliminar.TabIndex = 1;
             this.img_eliminar.TabStop = false;
-            this.img_eliminar.Click += new System.EventHandler(this.img_eliminar_Click);
             // 
             // img_agregar
             // 
@@ -110,21 +107,11 @@ namespace Gimnasio_PAPUSA
             // 
             this.lbl_modificar.AutoSize = true;
             this.lbl_modificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_modificar.Location = new System.Drawing.Point(644, 42);
+            this.lbl_modificar.Location = new System.Drawing.Point(665, 41);
             this.lbl_modificar.Name = "lbl_modificar";
-            this.lbl_modificar.Size = new System.Drawing.Size(61, 14);
+            this.lbl_modificar.Size = new System.Drawing.Size(90, 14);
             this.lbl_modificar.TabIndex = 5;
-            this.lbl_modificar.Text = "Modificar";
-            // 
-            // lbl_eliminar
-            // 
-            this.lbl_eliminar.AutoSize = true;
-            this.lbl_eliminar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_eliminar.Location = new System.Drawing.Point(711, 42);
-            this.lbl_eliminar.Name = "lbl_eliminar";
-            this.lbl_eliminar.Size = new System.Drawing.Size(54, 14);
-            this.lbl_eliminar.TabIndex = 6;
-            this.lbl_eliminar.Text = "Eliminar";
+            this.lbl_modificar.Text = "Buscar cliente";
             // 
             // lbl_cerrarSesion
             // 
@@ -296,25 +283,12 @@ namespace Gimnasio_PAPUSA
             this.btn_DeserializarXML.UseVisualStyleBackColor = false;
             this.btn_DeserializarXML.Click += new System.EventHandler(this.btn_DeserializarXML_Click);
             // 
-            // btn_importar
-            // 
-            this.btn_importar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btn_importar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_importar.Location = new System.Drawing.Point(367, 514);
-            this.btn_importar.Name = "btn_importar";
-            this.btn_importar.Size = new System.Drawing.Size(124, 31);
-            this.btn_importar.TabIndex = 24;
-            this.btn_importar.Text = "Importar BBDD";
-            this.btn_importar.UseVisualStyleBackColor = false;
-            this.btn_importar.Click += new System.EventHandler(this.btn_importar_Click);
-            // 
             // Gestor_Profes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(857, 557);
-            this.Controls.Add(this.btn_importar);
             this.Controls.Add(this.btn_DeserializarXML);
             this.Controls.Add(this.btn_SerializarXML);
             this.Controls.Add(this.btn_DeserializarJSON);
@@ -330,7 +304,6 @@ namespace Gimnasio_PAPUSA
             this.Controls.Add(this.lbl_nombreYApellido);
             this.Controls.Add(this.rtb_Listado);
             this.Controls.Add(this.lbl_cerrarSesion);
-            this.Controls.Add(this.lbl_eliminar);
             this.Controls.Add(this.lbl_modificar);
             this.Controls.Add(this.lbl_agregar);
             this.Controls.Add(this.img_agregar);
@@ -362,7 +335,6 @@ namespace Gimnasio_PAPUSA
         private System.Windows.Forms.PictureBox img_agregar;
         private System.Windows.Forms.Label lbl_agregar;
         private System.Windows.Forms.Label lbl_modificar;
-        private System.Windows.Forms.Label lbl_eliminar;
         private System.Windows.Forms.Label lbl_cerrarSesion;
         private System.Windows.Forms.RichTextBox rtb_Listado;
         private System.Windows.Forms.Label lbl_nombreYApellido;
@@ -378,6 +350,5 @@ namespace Gimnasio_PAPUSA
         private System.Windows.Forms.Button btn_DeserializarJSON;
         private System.Windows.Forms.Button btn_SerializarXML;
         private System.Windows.Forms.Button btn_DeserializarXML;
-        private System.Windows.Forms.Button btn_importar;
     }
 }
