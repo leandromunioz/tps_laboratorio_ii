@@ -78,9 +78,17 @@ namespace Gimnasio_PAPUSA
                 }
 
 
-                if (txt_usuario.Text.ToLower() != "profeLEAN" && txt_pass.Text != "profelean22")
+                if (txt_pass.Text.ToLower() != "gimnasio22")
                 {
-                    MessageBox.Show("Usuario y/o contraseña incorrecta.");
+                    MessageBox.Show("Contraseña incorrecta, acceso al sistema denegado.");
+                }
+                else if (string.IsNullOrEmpty(txt_usuario.Text.Trim()))
+                {
+
+                    MessageBox.Show("El campo usuario no puede estar vacío.");
+
+                    errorProvider1.SetError(txt_usuario, "El campo usuario no puede estar vacío.");
+
                 }
                 else
                 {

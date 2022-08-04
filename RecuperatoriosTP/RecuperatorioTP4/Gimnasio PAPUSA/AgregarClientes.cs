@@ -46,6 +46,11 @@ namespace Gimnasio_PAPUSA
         private void btn_registrar_Click(object sender, EventArgs e)
         {
 
+            Sistema<Clientes> sistema;
+            sistema = ClientesDB.Leer();
+            
+
+
             if (string.IsNullOrEmpty(txt_reg_nombre.Text) || string.IsNullOrEmpty(txt_reg_apellido.Text) || string.IsNullOrEmpty(txt_reg_dni.Text) || string.IsNullOrEmpty(txt_reg_direccion.Text))
             {
                 MessageBox.Show("Por favor, complete correctamente todos los campos antes de continuar.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -58,6 +63,9 @@ namespace Gimnasio_PAPUSA
             {
                 MessageBox.Show("El Dni debe poseer 8 caracteres.", "¡Atención!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
+            }else if (Clientes.DniExistente(sistema,txt_reg_dni.Text))
+            {
+                MessageBox.Show("El Dni del cliente ya se encuentra en el sistema.");
             }
 
             else

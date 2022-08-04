@@ -80,13 +80,10 @@ namespace Gimnasio_PAPUSA
         {
             lbl_bienvenido.Text += " " + usuario + " !";
 
-            Clientes cliente = new Clientes("pepe", "guerrero", "39487913", new DateTime(1996, 12, 21), "Mendoza 555", System.DateTime.Today);
-            Clientes cliente2 = new Clientes("papa", "garcia", "44361856", new DateTime(2002, 11, 23), "Calzada 25", System.DateTime.Today);
-            sistemaClientes.AgregarElemento(cliente);
-            sistemaClientes.AgregarElemento(cliente2);
             rtb_Listado.Text += sistemaClientes.ToString();
 
             sistemaClientes = ClientesDB.Leer();
+
             Refrescar();
         }
 

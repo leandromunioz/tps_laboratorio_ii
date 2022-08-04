@@ -62,7 +62,7 @@ namespace Gimnasio_PAPUSA
             // 
             this.img_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_modificar.Image = ((System.Drawing.Image)(resources.GetObject("img_modificar.Image")));
-            this.img_modificar.Location = new System.Drawing.Point(671, 1);
+            this.img_modificar.Location = new System.Drawing.Point(676, 0);
             this.img_modificar.Name = "img_modificar";
             this.img_modificar.Size = new System.Drawing.Size(79, 40);
             this.img_modificar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,7 +85,7 @@ namespace Gimnasio_PAPUSA
             // 
             this.img_agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_agregar.Image = ((System.Drawing.Image)(resources.GetObject("img_agregar.Image")));
-            this.img_agregar.Location = new System.Drawing.Point(569, -1);
+            this.img_agregar.Location = new System.Drawing.Point(581, 1);
             this.img_agregar.Name = "img_agregar";
             this.img_agregar.Size = new System.Drawing.Size(78, 42);
             this.img_agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,7 +97,7 @@ namespace Gimnasio_PAPUSA
             // 
             this.lbl_agregar.AutoSize = true;
             this.lbl_agregar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_agregar.Location = new System.Drawing.Point(582, 42);
+            this.lbl_agregar.Location = new System.Drawing.Point(593, 42);
             this.lbl_agregar.Name = "lbl_agregar";
             this.lbl_agregar.Size = new System.Drawing.Size(56, 14);
             this.lbl_agregar.TabIndex = 4;
@@ -107,7 +107,7 @@ namespace Gimnasio_PAPUSA
             // 
             this.lbl_modificar.AutoSize = true;
             this.lbl_modificar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_modificar.Location = new System.Drawing.Point(665, 41);
+            this.lbl_modificar.Location = new System.Drawing.Point(671, 41);
             this.lbl_modificar.Name = "lbl_modificar";
             this.lbl_modificar.Size = new System.Drawing.Size(90, 14);
             this.lbl_modificar.TabIndex = 5;
