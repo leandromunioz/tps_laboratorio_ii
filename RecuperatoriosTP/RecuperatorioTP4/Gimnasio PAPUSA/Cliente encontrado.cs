@@ -70,17 +70,21 @@ namespace Gimnasio_PAPUSA
                 cliente.Apellido = txt_clienteEncontrado_apellido.Text;
             }
 
-           
-
             if (!string.IsNullOrEmpty(txt_clienteEncontrado_direccion.Text))
             {
                 cliente.Direccion = txt_clienteEncontrado_direccion.Text;
             }
 
-            if (fechaNac_clienteEncontrado.Value != cliente.FechaNacimiento)
+            if (fechaNac_clienteEncontrado.Value != cliente.FechaNacimiento && !fechaNac_clienteEncontrado.Value.EsMenor())
             {
                 cliente.FechaNacimiento = fechaNac_clienteEncontrado.Value;
             }
+            else if (fechaNac_clienteEncontrado.Value.EsMenor())
+            {
+                MessageBox.Show("La edad del cliente no puede ser menor a 16 años.");
+            }
+
+
 
             ClientesDB.Modificar(cliente);
             rtb_clienteEncontrado.Clear();
